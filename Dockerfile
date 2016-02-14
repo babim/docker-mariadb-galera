@@ -1,4 +1,4 @@
-FROM babim/debianbase
+FROM babim/debianbase:ssh
 
 RUN groupadd -r mysql && useradd -r -g mysql mysql \
     && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db \
