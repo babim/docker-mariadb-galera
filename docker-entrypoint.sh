@@ -56,4 +56,5 @@ EOSQL
     chown -R mysql:mysql "$DATADIR"
 fi
 
+service ssh start
 exec ${CMD[@]}
