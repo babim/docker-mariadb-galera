@@ -78,7 +78,7 @@ tkey=/etc/ssl/mysql/server-key.pem
 ```
 
 # check status:
-
+```
 docker exec -ti database01 mysql -e "SHOW STATUS LIKE 'wsrep_cluster%'"
 +--------------------------+--------------------------------------+
 | Variable_name            | Value                                |
@@ -88,3 +88,4 @@ docker exec -ti database01 mysql -e "SHOW STATUS LIKE 'wsrep_cluster%'"
 | wsrep_cluster_state_uuid | 2882bcb7-ab3b-11e5-ab75-2b510ef0ec6f |
 | wsrep_cluster_status     | Primary                              |
 +--------------------------+--------------------------------------+
+```
