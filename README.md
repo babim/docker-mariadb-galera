@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--   [`latest` (*latest/Dockerfile*)](https://github.com/babim/docker-mariadb-galera/blob/master/Dockerfile)
+-   [`latest` (*latest/Dockerfile*)](https://github.com/babim/docker-mariadb-galera/blob/ssh/Dockerfile)
 
 # How to use this image.
 
