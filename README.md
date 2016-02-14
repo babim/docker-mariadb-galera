@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--   [`latest` (*latest/Dockerfile*)](https://github.com/diegomarangoni/docker-mariadb-galera/blob/master/Dockerfile)
+-   [`latest` (*latest/Dockerfile*)](https://github.com/babim/docker-mariadb-galera/blob/master/Dockerfile)
 
 # How to use this image.
 
@@ -19,7 +19,7 @@ docker run \
     -v /path/to/mariadb:/var/lib/mysql \
     -v /path/to/certs/:/etc/ssl/mysql:ro \
     -e MYSQL_ALLOW_EMPTY_PASSWORD=true \
-    diegomarangoni/mariadb-galera
+    babim/mariadb-galera
 ```
 
 - concat all containers IP into a `gcomm://` string, like:
@@ -76,3 +76,15 @@ tca=/etc/ssl/mysql/ca.pem
 tcert=/etc/ssl/mysql/server-cert.pem
 tkey=/etc/ssl/mysql/server-key.pem
 ```
+
+# check status:
+
+docker exec -ti database01 mysql -e "SHOW STATUS LIKE 'wsrep_cluster%'"
++--------------------------+--------------------------------------+
+| Variable_name            | Value                                |
++--------------------------+--------------------------------------+
+| wsrep_cluster_conf_id    | 3                                    |
+| wsrep_cluster_size       | 3                                    |
+| wsrep_cluster_state_uuid | 2882bcb7-ab3b-11e5-ab75-2b510ef0ec6f |
+| wsrep_cluster_status     | Primary                              |
++--------------------------+--------------------------------------+
