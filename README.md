@@ -14,7 +14,7 @@ So, basically, you can get a cluster running by following the steps:
 
 - start each container with:
 
-without password
+## without password
 ```
 docker run \
     -v /path/to/my.cnf:/etc/mysql/my.cnf \
@@ -23,7 +23,7 @@ docker run \
     -e MYSQL_ALLOW_EMPTY_PASSWORD=true \
     babim/mariadb-galera
 ```
-with password
+## with password
 ```
 docker run \
     -v /path/to/my.cnf:/etc/mysql/my.cnf \
