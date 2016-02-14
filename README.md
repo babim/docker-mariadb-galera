@@ -13,12 +13,22 @@ So, basically, you can get a cluster running by following the steps:
 
 - start each container with:
 
+without password
 ```
 docker run \
     -v /path/to/my.cnf:/etc/mysql/my.cnf \
     -v /path/to/mariadb:/var/lib/mysql \
     -v /path/to/certs/:/etc/ssl/mysql:ro \
     -e MYSQL_ALLOW_EMPTY_PASSWORD=true \
+    babim/mariadb-galera
+```
+with password
+```
+docker run \
+    -v /path/to/my.cnf:/etc/mysql/my.cnf \
+    -v /path/to/mariadb:/var/lib/mysql \
+    -v /path/to/certs/:/etc/ssl/mysql:ro \
+    -e MYSQL_ROOT_PASSWORD==123456 \
     babim/mariadb-galera
 ```
 
