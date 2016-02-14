@@ -1,6 +1,4 @@
-FROM debian:jessie
-
-MAINTAINER "Diego Marangoni" <https://github.com/diegomarangoni>
+FROM babim/debianbase
 
 RUN groupadd -r mysql && useradd -r -g mysql mysql \
     && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db \
