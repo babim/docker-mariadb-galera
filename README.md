@@ -1,3 +1,6 @@
+[![](https://images.microbadger.com/badges/image/babim/mariadb-galera.svg)](https://microbadger.com/images/babim/mariadb-galera "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/mariadb-galera.svg)](https://microbadger.com/images/babim/mariadb-galera "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/mariadb-galera:ssh.svg)](https://microbadger.com/images/babim/mariadb-galera:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/mariadb-galera:ssh.svg)](https://microbadger.com/images/babim/mariadb-galera:ssh "Get your own version badge on microbadger.com")
+
 # Supported tags and respective `Dockerfile` links
 
 -   [`latest` (*latest/Dockerfile*)](https://github.com/babim/docker-mariadb-galera/blob/master/Dockerfile)
